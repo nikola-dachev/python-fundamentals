@@ -1,1 +1,1 @@
-Lab and Exercise problems from Python fundamentals  solved 
+Python fundamentals - Solutions to Lab and Exercise problems  
