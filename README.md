@@ -1,4 +1,4 @@
-Python fundamentals - May 2023 - Solutions to Lab and Exercise problems  
+<h1>Python fundamentals - May 2023 - Solutions to Lab and Exercise problems</h1>  
 
 SoftUni: https://softuni.bg/
 
