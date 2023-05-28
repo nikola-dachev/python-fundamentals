@@ -1,8 +1,17 @@
-import math
+tank_capacity = 255
+number_of_lines = int(input())
+sum = 0
 
-number_of_people = int(input())
-capacity = int(input())
+for _ in range (number_of_lines):
+    poured_water = int(input())
 
-courses_count = math.ceil(number_of_people /capacity)
+    if poured_water <= tank_capacity:
+        tank_capacity -= poured_water
+        sum +=poured_water
 
-print(courses_count)
+    else:
+        print("Insufficient capacity!")
+        continue
+
+print(sum)
+
