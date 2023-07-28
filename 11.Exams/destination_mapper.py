@@ -1,15 +1,16 @@
 import re
 
+total_len = 0
+destination_list = []
 text = input()
-pattern = r'(\=|\/)([A-Z][A-Za-z]{2,})\1'
-result = re.findall(pattern,text)
-travel_points = 0
-my_list = []
+pattern = r'(\=|\/)([A-Z][A-Za-z]{2,})(\1)'
 
-if result:
-  for res in result:
-    country = res[1]
-    my_list.append(country) #adding all countries to a list that i will unpack when printing
-    travel_points += len(country)
-print(f"Destinations: {', '.join(my_list)}")
-print(f"Travel Points: {travel_points}")
+result = re.findall(pattern, text)
+
+for el in result:
+  total_len += len(el[1])
+  destination_list.append(el[1])
+
+
+print(f"Destinations: {', '.join(destination_list)}")
+print(f"Travel Points: {total_len}")
